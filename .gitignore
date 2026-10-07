@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.ipynb_checkpoints/
+.DS_Store
+models/*
+!models/.gitkeep
+outputs/*
+!outputs/.gitkeep
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep

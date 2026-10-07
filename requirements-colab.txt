@@ -1,0 +1,10 @@
+# Colab 전용 — torch·numpy·pandas·sklearn·matplotlib·jupyter는 Colab에 이미 설치돼 있음
+transformers>=4.56
+accelerate>=0.34
+datasets>=2.20
+sentencepiece
+pyyaml
+kiwipiepy
+python-dotenv
+openai
+bitsandbytes          # 8B 모델 4bit 실행용 (CUDA)

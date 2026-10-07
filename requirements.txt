@@ -1,0 +1,30 @@
+# ── 공통 학습/테스트 환경 (macOS Apple Silicon: MPS, NVIDIA: CUDA, 그 외 CPU) ──
+torch>=2.4
+transformers>=4.56        # Qwen3Guard·최신 dtype 인자 지원
+accelerate>=0.34
+datasets>=2.20
+safetensors
+sentencepiece
+protobuf
+
+# 데이터·평가
+numpy
+pandas
+scikit-learn
+matplotlib
+pyyaml
+tqdm
+openpyxl
+
+# 한국어 처리 (형태소·문장분리) — Java/Mecab 설치 없이 동작
+kiwipiepy
+
+# API 연동 (Solar는 OpenAI 호환 SDK 사용) · 환경변수
+openai
+python-dotenv
+requests
+huggingface_hub
+
+# 노트북
+jupyterlab
+ipykernel

@@ -1,0 +1,14 @@
+# F6 위험도 분류기 학습 설정
+model_name: beomi/KcELECTRA-base-v2022
+train_file: data/custom/risk_scenarios.csv        # 컬럼: text,label (none/low/mid/high)
+test_file: data/custom/hard_negatives.csv          # 오탐 함정 세트도 같은 형식
+output_dir: models/risk_classifier
+max_length: 128
+epochs: 5
+batch_size: 16
+learning_rate: 3.0e-5
+weight_decay: 0.01
+val_ratio: 0.2
+seed: 42
+# 최종 점수 = rule_weight × 규칙 + (1-rule_weight) × 분류기 (초기엔 규칙 비중 높게)
+rule_weight: 0.6

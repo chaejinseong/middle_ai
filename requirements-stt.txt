@@ -1,0 +1,4 @@
+# F1 음성(STT) 테스트용 — 선택 설치 (./setup.sh --stt)
+# macOS는 먼저 `brew install ffmpeg` 필요
+openai-whisper
+soundfile
