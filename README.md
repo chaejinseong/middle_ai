@@ -29,9 +29,13 @@ VS Code/Jupyter에서는 커널 **"middle_project_ai (.venv)"** 선택.
 
 ## 1-1. Colab에서 실행 (권장 — 맥 저장공간 절약)
 
-구글 드라이브 `middle_project_ai_colab/` 폴더의 `colab_risk_models.ipynb`를 열고(연결 앱: Google Colaboratory)
-런타임을 T4 GPU로 바꾼 뒤 위에서부터 실행. 코드는 드라이브의 `middle_project_ai_code.zip`에서 자동으로 풀림.
-모델은 Colab 임시 디스크에 받으므로 맥·드라이브 용량을 쓰지 않음.
+1. GitHub `chaejinseong/middle_ai`의 `notebooks/colab_risk_models.ipynb`를 Colab에서 열기
+   (colab.research.google.com → GitHub 탭 → 저장소 선택, 비공개면 GitHub 로그인 허용)
+2. 런타임을 **T4 GPU**로 바꾸고 위에서부터 실행
+3. 코드는 GitHub에서 최신본을 받고, 학습 모델·결과는 구글 드라이브 `middle_ai_results/`에 저장됨
+4. 비공개 저장소면 Colab 🔑 보안 비밀에 `GH_TOKEN` 등록
+
+**작업 흐름**: 맥에서 코드·데이터 수정 → `git push` → Colab에서 0번 셀 다시 실행(자동 `git pull`) → 학습·테스트
 
 ## 2. 폴더 구조
 
